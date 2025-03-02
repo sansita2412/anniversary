@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('image2.jpg'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+header {
+    background-color: hsl(330, 40%, 57%);
+    color: white;
+    padding: 20px;
+}
+
+/* Game Container */
+#gameContainer {
+    position: relative;
+    height: 80vh; /* Keeps everything in view */
+}
+
+/* Start Button */
+#startBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#startBtn:hover {
+    background-color: #218838;
+}
+
+/* Yes Button */
+#yesBtn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background-color: #d14594b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* No Button */
+#noBtn {
+    display: block;
+    margin: 20px auto;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#noBtn:hover {
+    background-color: #0056b3;
+}
+/* Popup Modal */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+}
+
+.popup-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}

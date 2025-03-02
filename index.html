@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy anniversary </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome Piyush</h1>
+        <p>Try to click "Yes" if you can ,refresh if it goes out of bounds sorry! 😆</p>
+    </header>
+
+    <div id="gameContainer">
+        <h2 id="question">Click "Start" to begin!</h2>
+        
+        <button id="yesBtn" onmouseover="runAway()" onclick="handleYes()" style="display: none;">Yes</button>
+        <button id="noBtn" onclick="handleAnswer('no')" style="display: none;">No</button>
+        <button id="startBtn" onclick="startGame()">Start</button>
+
+        <p id="result"></p>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="winSound" src="https://www.fesliyanstudios.com/play-mp3/6257"></audio> <!-- Calming Win Sound -->
+
+    <script src="script.js"></script>
+</body>
+<!-- Popup Modal -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Congratulations! you finally caught it on 13th try🎉</h2>
+        <p>HAPPY ANNIVERSAY MY LOVE 13th march ❤️</p>
+        <img src="image4.jpg" alt="Cute Image" class="popup-image">
+    </div>
+</div>
+
+</html>
